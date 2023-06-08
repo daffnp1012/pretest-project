@@ -302,42 +302,107 @@ section{
     color: var(--primary-color);
 }
 
+.tab-box:hover{
+    filter: brightness(0.8);
+    transition-duration: 0.5s;
+}
+
+.box-info{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+/* BLOG */
+
+
+.blog-title::before{
+    content: "";
+    display: inline-block;
+    width: 75px;
+    height: 4px;
+    background-color: var(--primary-color);
+    margin-bottom: 12px;
+    margin-top: 12px;
+}
+
+.blog-title::after{
+    content: "";
+    display: inline-block;
+    width: 75px;
+    height: 4px;
+    background-color: var(--primary-color);
+    margin-bottom: 12px;
+    margin-top: 12px;
+}
+
+.card-blog{
+    gap: 15px;
+    padding: 50px;
+}
+
+.cardbox-blog{
+    display: block;
+    position: relative;
+    height: 75;
+    padding: 0px 10px;
+}
+
+.post-image{
+    position: relative;
+    overflow: hidden;
+}
+
+.post-bio{
+    margin-top: 12px;
+}
+
+.post-date{
+    position: relative;
+    padding: 10px;
+    top: -50px;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* END BLOG */
+
 /* FOOTER */
-#footer { 
-    display: flex;
-    justify-content: center;
-    background: #1e1e1e;
-    min-height: 200px;
 
+footer{
+    background: linear-gradient(0deg, rgba(0,0,0,0.841), rgba(44,44,44,0.702)), url(https://bootstrapmade.com/demo/templates/UpConstruction/assets/img/footer-bg.jpg);
 }
 
-.footer-content{
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.footer .container .link a {
+    font-size: 18px;
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    line-height: 1;
+    margin-right: 8px;
+    border-radius: 4px;
+    padding: 10px;
+    transition: 0.3s;
+}   
+
+.a{
+    color: var(--primary-color);
 }
 
-.footer-social a{
-    color:  #1e1e1e;
-    margin: 0px 10px;
-    font-size: 25px;
+
+.footerr::after{
+    content: "";
     background-color: var(--primary-color);
-    padding: 10px 15px;
-    border-radius: 15px;
+    width: 100%;
+    height: 1px;
+    margin: auto;
+    display: block;
+    margin-top: 25px;
 }
 
-.footer-social a :hover{
-    background-color: var(--primary-color);
-    color: white;
-}
-
-.footer-copyright{
-   margin-top: 20px;
-   color: white;
-}
-
-.copyright{
-    color: white;
-
-}
